@@ -1,0 +1,136 @@
+.appler_info{
+  position: relative;
+  width: 100%;
+  height: 82rpx;
+}
+.appler_info image{
+  position: absolute;
+  width: 53rpx;
+  height: 44rpx;
+  top: 38rpx;
+  left: 30rpx;
+}
+.appler_info_text{
+  position: absolute;
+  font-size: 28rpx;
+  font-weight: Regular;
+  color: #FF6767;
+  top: 43rpx;
+  left: 102rpx;
+}
+/*  基本信息认证盒子  */
+.apply_info_box{ 
+  width: 710rpx;
+  height: 265rpx;
+  border-top: 1rpx solid #FFFFFF; 
+  border-radius: 20rpx;
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+  box-shadow: 0rpx 8rpx 25rpx 3rpx #D6D7DC;
+}
+.info_phone{
+  position: relative;
+  width: 98%;
+  height: 88rpx;
+  border-bottom: 1px solid #D6D7DC;
+  margin-left: 2%;
+}
+.asterisk{
+  position: absolute;
+  font-size: 28rpx;
+  font-weight: Regular;
+  color: #FF6767;
+  top: 37rpx;
+  left: 18rpx;
+}
+.binding_phone{
+  position: absolute;
+  font-size: 28rpx;
+  font-weight: Regular;
+  color: #2B2B2B;
+  top: 31rpx;
+  left: 52rpx;
+}
+.info_phone input{
+  position: absolute;
+  width: 270rpx;
+  height: 40rpx;
+  font-size: 32rpx;
+  top: 20rpx;
+  right: 24rpx;
+  text-align: right;
+}
+.one_fontsize{
+  font-size: 28rpx;
+}
+
+.info_email{
+  position: relative;
+  width: 98%;
+  height: 88rpx;
+  border-bottom: 1px solid #D6D7DC;
+  margin-left: 2%;
+}
+.binding_email{
+  position: absolute;
+  font-size: 28rpx;
+  font-weight: Regular;
+  color: #2B2B2B;
+  top: 31rpx;
+  left: 52rpx;
+}
+.info_email input{
+  position: absolute;
+  width: 270rpx;
+  height: 40rpx;
+  font-size: 32rpx;
+  top: 20rpx;
+  right: 24rpx;
+  text-align: right;
+}
+
+.info_WXname{
+  position: relative;
+  width: 98%;
+  height: 88rpx;
+  margin-left: 2%;
+}
+.binding_WXname{
+  position: absolute;
+  font-size: 28rpx;
+  font-weight: Regular;
+  color: #2B2B2B;
+  top: 31rpx;
+  left: 52rpx;
+}
+.name{
+  position: absolute;
+  font-size: 28rpx;
+  font-weight: Regular;
+  color: #2B2B2B;
+  top: 25rpx;
+  right: 31rpx;
+}
+.info_WXname input{
+  position: absolute;
+  width: 270rpx;
+  height: 40rpx;
+  font-size: 32rpx;
+  top: 20rpx;
+  right: 24rpx;
+  text-align: right;
+}
+
+/*  提交按钮  */
+.improveRelease{
+  position: fixed;
+  background: #2192D0;
+  width: 100%;
+  height: 90rpx;
+  bottom: 0rpx;
+  left: 0rpx;
+  color: #FFFFFF;
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 90rpx;
+}

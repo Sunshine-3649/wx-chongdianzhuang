@@ -1,0 +1,34 @@
+<view class='car-item'>
+  <view class='left'>
+    <image class='avator' src='{{userInfo.avatar}}'></image>
+  </view>
+  <view class='right'>
+    <view class='one'>
+      <view class='name'>{{userInfo.nickname}}</view>
+      <!-- <view class='tag'>众泰车主</view> -->
+      <!-- <view class='sex'>
+				<image class='seximg' src='../../images/arrow-right@2x.png'></image>
+			</view> -->
+      <!-- <view class='hongbao'>
+            <image class="hongbaoimg " src='../../images/red-paper@2x.png'></image>
+          </view> -->
+    </view>
+    <view class='two'>
+      <view class='time' wx:if="{{userInfo.sign}}">{{userInfo.sign}}</view>
+      <view class='time' wx:else>暂无签名</view>
+      <view class='tag' wx:if="{{userInfo.attrName}}">{{userInfo.attrName}}</view>
+      <view class='tag' wx:else>暂无车型</view>
+    </view>
+    <view class="three">
+      <view class="phone" wx:if="{{userInfo.phone}}">
+        <view wx:if="{{userInfo.status == 0}}">手机号：{{defPhone}}</view>
+        <view wx:else>手机号：{{phone}}</view>
+        <!-- <view class="" data-status="{{userInfo.status}}" catchtap="toggle">
+          <image class="img-count2" wx:if="{{userInfo.status == 0}}" src="../../images/readcount-on@2x.png" alt=""></image>
+          <image class="img-count1" wx:else src="../../images/readcount-off@2x.png" alt=""></image>
+        </view> -->
+      </view>
+      <view class="phone" wx:else>暂无手机号</view>
+    </view>
+  </view>
+</view>

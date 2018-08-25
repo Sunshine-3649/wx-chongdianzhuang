@@ -1,0 +1,49 @@
+<view class='public-list'>
+  <view class='public-item'>
+    <view class='public-left'>
+      <view class='left-one'>
+        <text class='name'>清风</text>
+        <text class='tag'>众泰车主</text>
+      </view>
+      <text class='tag'>地上</text>
+      <view class='left-three'>
+        <text class='three'>用户评分：暂无评分</text>
+      </view>
+      <view class='left-three'>
+        <text class='three'>地址 : 杭州市西湖区文三路61号</text>
+      </view>
+      <view class='left-two'>
+        <text class='two-left'>快充：1</text>
+        <text class='two'>慢充：1</text>
+      </view>
+    </view>
+    <view class='public-right'>
+      <image class='weizhi' src='../../../../images/weizhi@2x.png'></image>
+      <view class='juli'>100m</view>
+    </view>
+  </view>
+  <view class='public-info'>
+    <view class='yunyingshang'>私人共享电桩</view>
+    <view class='tingchefei'>停车费：10元/小时</view>
+    <view class='fuwufeiyong'>服务费用：1.6元/度</view>
+    <view class='chongdianfeiyong'>充电费用：1.6元/度</view>
+    <view class='yunyingshijian'>营运时间： 0:00-24:00</view>
+  </view>
+  <view class='pinglun'>
+    <view class='title'>最新评论：</view>
+    <view class='userinfo'>
+      <view class='avator'>
+
+      </view>
+      <view class='info'>
+        <view class='title'>
+          <text class='name'>神仙妹妹</text>
+          <text class='tag'>众泰车主</text>
+        </view>
+        <view class='time'>01-02 23：22</view>
+      </view>
+    </view>
+    <view class='desc'>可以用挺好的</view>
+  </view>
+  <button class='btn'>我要评论</button>
+</view>

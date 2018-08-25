@@ -1,0 +1,23 @@
+  <!--搜索区域  -->
+  <view class="flex-header">
+    
+    <view class="flex-right" bindtap='toSearch'>
+      <image class='search' src="../../../../images/search@2x.png"></image>
+      <input class='inputsearch' value="{{defualt}}" bindinput="searchValue" placeholder="输入您要搜索的内容" focus/>
+      <!-- <image class='clear' bindtap='clear' src="../../../../images/clear@2x.png"></image> -->
+    </view>
+    <view class="flex-left" bindtap="toIndex">
+      搜索
+      <!-- <image class='arr-down' src="../../../../images/open_red@2x.png"></image> -->
+    </view>
+  </view>
+  <view class='history'> 
+    <view class='header'>
+      <text class='history-search'>历史搜索</text>
+      <text class='history-clear' bindtap="clearHistory">清除历史</text>
+    </view>
+    <view class='tag' wx:for-items="{{searchList}}" wx:key="index" data-searchText="{{item.searchText}}" bindtap="addSearchText">{{item.searchText}}</view>
+    <!-- <label class="tag" wx:for="{{searchList}}" wx:key="index">
+      <checkbox value="{{item.searchId}}" checked="{{item.checked}}"/>{{item.searchText}}
+    </label> -->
+  </view>

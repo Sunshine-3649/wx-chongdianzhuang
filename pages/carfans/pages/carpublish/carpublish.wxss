@@ -1,0 +1,171 @@
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.publish {
+  width: 100%;
+}
+
+/*  选择版块  */
+.publish_searchModel {
+  position: relative;
+  width: 100%;
+  height: 100rpx;
+  background: #2192d0;
+}
+.publish_searchModel .text {
+  position: absolute;
+  font-size: 30rpx;
+  color: #ffffff;
+  top: 36rpx;
+  left: 48rpx;
+}
+.publish_searchModel .searchModel_content {
+  position: absolute;
+  width: 400rpx;
+  height: 55rpx;
+  border-bottom: 1px solid #ffffff;
+  font-size: 34rpx;
+  color: #ffffff;
+  text-align: center;
+  top: 25rpx;
+  left: 214rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.publish_searchModel image {
+  position: absolute;
+  width: 44rpx;
+  height: 44rpx;
+  top: 20rpx;
+  right: 46rpx;
+}
+.publish_searchModel .text2 {
+  position: absolute;
+  font-size: 18rpx;
+  color: #ffffff;
+  bottom: 10rpx;
+  right: 32rpx;
+}
+
+.publish_title {
+  width: 520rpx;
+  height: 65rpx;
+  border-bottom: 2rpx solid #e4e4e4;
+  margin-left: 40rpx;
+}
+
+.publish_title input {
+  width: 100%;
+  height: 36rpx;
+  font-size: 36rpx;
+  margin-top: 35rpx;
+  margin-left: 10rpx;
+}
+
+/*  发布按钮  */
+/* .release {
+  width: 80%;
+  height: 60rpx;
+  line-height: 60rpx;
+  background: #2192d0;
+  border-radius: 30rpx;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+  color: #f9f9fa;
+  text-align: center;
+} */
+
+.publish_content {
+  width: 680rpx;
+  height: 380rpx;
+  border-bottom: 4rpx solid #e4e4e4;
+  margin-left: 35rpx;
+  overflow: hidden;
+  margin-top: 20rpx;
+}
+
+.publish_content textarea {
+  width: 100%;
+  height: 380rpx;
+  font-size: 36rpx;
+}
+
+.tip {
+  font-size: 25rpx;
+  margin-left: 550rpx;
+  color: #999;
+}
+
+.addimgText {
+  margin-top: 25rpx;
+  margin-left: 30rpx;
+  font-size: 35rpx;
+  color: #999;
+}
+
+.uploadImg {
+  width: 100%;
+  height: 400rpx;
+}
+
+/*隔离线  */
+.gelixian {
+  width: 680rpx;
+  height: 4rpx;
+  background: #e4e4e4;
+  margin-left: 35rpx;
+}
+
+.add {
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.add image {
+  width: 130rpx;
+  height: 130rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+}
+
+.show_image {
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+  /* border: 1px dashed #999; */
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+.show_image .image {
+  width: 150rpx;
+  height: 150rpx;
+}
+.delfult {
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: -15rpx;
+  margin-top: -15rpx;
+}
+.btn {
+  width: 750rpx;
+  height: 110rpx;
+  color: #ffffff;
+  background-color: #2192d0;
+  line-height: 110rpx;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

@@ -1,0 +1,107 @@
+<view class='container'>
+  <!--搜索区域  -->
+  <view class="flex-header">
+    <view class="flex-right" bindtap='toSearch'>
+      <image class='search' src="../../images/search@2x.png"></image>
+      <input class='inputsearch' disabled bindinput="searchValue" placeholder="输入您感兴趣的内容" />
+      <!-- <image class='clear' bindtap='clear' src="../../images/clear@2x.png"></image> -->
+    </view>
+    <view class='flex-left' bindtap="toPublish">我要发布</view>
+  </view>
+  <!--tab切换  -->
+  <!-- <view class='flex-tab'>
+    <view class="public {{currentIndex == 'a' ? 'current' : ''}}" id='a' bindtap="toggleClass">车友会</view>
+    <view class="private {{currentIndex == 'b' ? 'current' : ''}}" id='b' bindtap="toggleClass">桩友会</view>
+  </view> -->
+  <block>
+    <!--车类别  -->
+    <!-- <view class="type-container">
+      <scroll-view class="type-navbar " scroll-x="true ">
+        <view class="type-box " wx:for-items="{{categories}}" wx:key="{{index}}">
+          <view class="type-navbar-item ">
+            {{item}}
+          </view>
+        </view>
+      </scroll-view>
+    </view> -->
+    <!-- <view class='add'>+</view> -->
+    <!--列表  -->
+    <view class='deploy'>
+      <view class='wenzi'>
+        浏览设置
+      </view>
+      <view class='wenzi tag {{currentFold == "a"?"current-tag ":" "}}' id='a' bindtap='toggleFold'>
+        <image class='icon' src='../../images/fold@2x.png'></image>
+        全部折叠
+      </view>
+      <view class='wenzi tag {{currentFold == "b"?"current-tag ":" "}}' id='b' bindtap='toggleFold'>
+        <image class='icon' src='../../images/unfold@2x.png'></image>
+        全部展开
+      </view>
+    </view>
+    <!--车辆列表  -->
+    <view class='car-list'>
+      <!-- <scroll-view scroll-y="true " style="height: 832rpx; " bindscrolltoupper="publicupper" bindscrolltolower="publiclower" > -->
+        <view class='car-item' wx:for="{{carClueList}}" wx:key="index" id="{{item.bbsId}}" bindtap='toCarfansDetail'>
+          <view class='left' id="{{item.uid}}" catchtap="toUserDetail">
+            <image class='avator' src='{{item.avatar}}'></image>
+          </view>
+          <view class='right'>
+            <view class='one'>
+              <view class='name'>{{item.nickname}}</view>
+              <view class='sex'>
+                <image wx:if="{{item.sex == '1'}}" class='seximg' src='../../images/man@2x.png'></image>
+                <image wx:if="{{item.sex == '2'}}" class='seximg' src='../../images/woman@2x.png'></image>
+              </view>
+              <text class='tag' wx:if="{{item.attrName}}">{{item.attrName}}</text>
+              <!-- <view class='hongbao'>
+                <image class="hongbaoimg " src='../../images/red-paper@2x.png'></image>
+              </view> -->
+              <view class='unfold' wx:if="{{!item.isFold}}" id="{{index}}" catchtap="foldClick">
+                <image class="unfoldimg " src='../../images/unfold@2x.png'></image>
+                <text>展开</text>
+              </view>
+            </view>
+            <view class='two'>
+              <text class='time'>{{item.beforeTime}}前更新</text>
+            </view>
+          </view>
+          <view class='block' >
+            <view class='title'>{{item.bbsContent}}</view>
+            <view class='img-group' wx:if="{{item.isFold}}">
+              <block wx:for="{{item.bbsImg}}" wx:key="index" wx:if="{{index < 3}}">
+                <image class='img' src='{{item}}' mode="aspectFill"></image>
+              </block>
+            </view>
+            <view class='count' wx:if="{{item.isFold}}">
+              <view class='readcount'>
+                <image class="readcount-img " src='../../images/readcount@2x.png'></image>
+                <text class='font'>{{item.lookNum}}+</text>
+              </view>
+              <view class='readcount'>
+                <image class="commentcount-img " src='../../images/commentcount@2x.png'></image>
+                <text class='font'>{{item.commentNum}}+</text>
+              </view>
+              <!-- <view class='readcount'>
+                <image class="sharecount-img " src='../../images/sharecount@2x.png'></image>
+                <text class='font'>{{item.forwardingNum}}+</text>
+              </view> -->
+              <view class='readcount' id="{{index}}" catchtap="foldClick">
+                <image class="fold-img " src='../../images/fold@2x.png'></image>
+                <text class='font'>折叠</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="nomore loading" hidden="{{!isNomore}}">
+          <image class='load' src='../../images/load.gif'></image>
+          正在加载
+        </view>
+        <view class="nomore" hidden="{{isNomore}}">
+          <text>没有更多了...</text>
+        </view>
+
+      <!-- </scroll-view> -->
+    </view>
+  </block>
+</view>

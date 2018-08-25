@@ -1,0 +1,145 @@
+.car-item {
+  padding: 25rpx 31rpx 0 31rpx;
+  border-bottom: 2rpx solid #d3d3d3;
+}
+.left {
+  width: 64rpx;
+  height: 64rpx;
+  display: inline-block;
+}
+.left .avator {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.right {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 15rpx;
+}
+.one {
+  width: 600rpx;
+  line-height: 28rpx;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.one .hongbao {
+  width: 37rpx;
+  height: 52rpx;
+  position: absolute;
+  right: 145rpx;
+  top: -14rpx;
+}
+.one .hongbaoimg {
+  width: 100%;
+  height: 100%;
+}
+.one .name {
+  width: 113rpx;
+  font-size: 28rpx;
+  margin-right: 20rpx;
+}
+.one .sex {
+  width: 26rpx;
+  height: 27rpx;
+  display: inline-block;
+}
+.one .sex .seximg {
+  width: 100%;
+  height: 100%;
+}
+.one .unfold {
+  width: 110rpx;
+  height: 26rpx;
+  font-size: 20rpx;
+  display: inline-block;
+  margin-left: 308rpx;
+}
+.one .unfold .unfoldimg {
+  width: 26rpx;
+  height: 26rpx;
+  margin-right: 10rpx;
+}
+.two .time {
+  color: #939393;
+  font-size: 18rpx;
+  line-height: 18rpx;
+  position: relative;
+  top: -5rpx;
+}
+.block .title {
+  font-size: 32rpx;
+  color: #2b2b2b;
+  font-weight: 700;
+  margin-bottom: 11rpx;
+}
+.block .img-group {
+  display: flex;
+}
+.block .img {
+  width: 221rpx;
+  height: 221rpx;
+  margin-right: 13rpx;
+}
+.count {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20rpx;
+  margin-top: 32rpx;
+  /* padding-right: 30rpx; */
+  padding-bottom: 24rpx;
+}
+.readcount {
+  /* width: 172rpx;
+  display: inline-block; */
+}
+.readcount .readcount-img {
+  width: 29rpx;
+  height: 18rpx;
+  display: inline-block;
+  margin-right: 13rpx;
+}
+.readcount .commentcount-img {
+  width: 28rpx;
+  height: 26rpx;
+  display: inline-block;
+  position: relative;
+  top: 7rpx;
+  margin-right: 13rpx;
+}
+.readcount .sharecount-img {
+  width: 26rpx;
+  height: 26rpx;
+  display: inline-block;
+  position: relative;
+  top: 7rpx;
+  margin-right: 13rpx;
+}
+.readcount .fold-img {
+  width: 26rpx;
+  height: 26rpx;
+  display: inline-block;
+  position: relative;
+  top: 7rpx;
+  margin-right: 13rpx;
+}
+.font {
+  display: inline-block;
+  line-height: 26rpx;
+  vertical-align: middle;
+}
+.loading {
+  line-height: 50rpx;
+}
+.load {
+  width: 32rpx;
+  height: 32rpx;
+}
+.nomore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cecaca;
+  font-size: 18rpx;
+}

@@ -1,0 +1,25 @@
+<view class="account">
+  <view class='left'>
+    <image class="img" src='../../../../images/earnings@2x.png'></image>
+  </view>
+  <view class='middle'>
+    共享电桩收益：100元
+  </view>
+  <view class='right'>
+    <view class='tag'>提现</view>
+  </view>
+</view>
+<view class='line'></view>
+<view class="account">
+  <view class='left'>
+    <image class="img" src='../../../../images/cashdeposit@2x.png'></image>
+  </view>
+  <view class='middle'>
+    我的保证金：200元
+  </view>
+  <view class='right right-other'>
+    <view class='tag tag-one'>充值</view>
+    <view class='tag tag-two'>提现</view>
+  </view>
+</view>
+<view class='footer'>*交易记录</view>

@@ -1,0 +1,29 @@
+<view class="appler_info">
+  <image src='../../../../images/sq_iocn_jb@2x.png'></image>
+  <text class="appler_info_text">编辑基本信息</text>
+</view>
+
+<view class="apply_info_box">
+    <view class="info_phone">
+      <text class="asterisk">*</text>
+      <text class="binding_phone">手机号:</text>
+      <input placeholder='+86  |  11位手机号'  focus maxlength="11" bindinput="bindPhoneInput" type="number">
+      </input>
+    </view>
+    <view class="info_email">
+      <text class="asterisk">*</text>
+      <text class="binding_email">年龄:</text>
+      <input type='text' placeholder='输入您的真实年龄'  maxlength="2" bindinput="bindAgeInput" type="number">
+      </input>
+    </view>
+    <view class="info_WXname">
+      <text class="asterisk">*</text>
+      <text class="binding_WXname">个性签名:</text>
+      <input type='text' placeholder='输入您个性签名' maxlength="30" bindinput="bindQmInput">
+      </input>
+    </view>
+  </view>
+
+  <view class="improveRelease" bindtap='improveRelease'>
+    确定
+  </view>

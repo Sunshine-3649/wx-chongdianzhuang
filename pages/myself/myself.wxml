@@ -1,0 +1,106 @@
+<!--pages/myself/myself.wxml-->
+<view class='myself'>
+
+  <navigator url="/pages/myself/pages/improveInfo/improveInfo">
+    <view class='car-item'>
+      <view class='left'>
+        <image class='avator' src='{{userInfo.avatar}}'></image>
+      </view>
+      <view class='right'>
+        <view class='one'>
+          <view class='name'>{{userInfo.nickname}}</view>
+          <!-- <view class='tag'>众泰车主</view> -->
+          <view class='sex'>
+            <image class='seximg' src='../../images/arrow-right@2x.png'></image>
+          </view>
+          <!-- <view class='hongbao'>
+          <image class="hongbaoimg " src='../../images/red-paper@2x.png'></image>
+        </view> -->
+        </view>
+        <view class='two'>
+          <view class='time' wx:if="{{userInfo.sign}}">{{userInfo.sign}}</view>
+          <view class='time' wx:else>暂无签名</view>
+          <view class='tag' wx:if="{{userInfo.attrName}}">{{userInfo.attrName}}</view>
+          <view class='tag' wx:else>暂无车型</view>
+        </view>
+        <view class="three">
+          <view class="phone" wx:if="{{userInfo.phone}}">
+            <view wx:if="{{userInfo.status == 0}}">手机号：{{defPhone}}</view>
+            <view wx:else>手机号：{{phone}}</view>
+            <view class="" data-status="{{userInfo.status}}" catchtap="toggle">
+              <image class="img-count2" wx:if="{{userInfo.status == 0}}" src="../../images/readcount-on@2x.png" alt=""></image>
+              <image class="img-count1" wx:else src="../../images/readcount-off@2x.png" alt=""></image>
+            </view>
+            <!-- <view class="" catchtouchstart="showPhone" catchtouchend="hidePhone">
+              <image class="img-count" src="{{imgUrl}}" alt=""></image>
+            </view> -->
+          </view>
+
+          <view class="phone" wx:else>暂无手机号</view>
+        </view>
+      </view>
+    </view>
+  </navigator>
+  <!--分割线  -->
+  <view class='line'></view>
+  <navigator url="/pages/myself/pages/mycar/mycar">
+    <view class='mine'>
+      <view class='name'>
+        <image class='icon' src='../../images/car-small@2x.png'></image>
+        <text class='wenzi'>我的爱车</text>
+        <image class='arrow' src='../../images/arrow-right@2x.png'></image>
+      </view>
+    </view>
+  </navigator>
+  <!-- 我的电桩 -->
+  <navigator url="/pages/myself/pages/myelectlist/myelectlist">
+    <view class='mine'>
+      <view class='name'>
+        <image class='icon' src='../../images/charge-small@2x.png'></image>
+        <text class='wenzi'>我的电桩</text>
+        <image class='arrow' src='../../images/arrow-right@2x.png'></image>
+      </view>
+    </view>
+  </navigator>
+  <!-- 资金账户 -->
+  <!-- <navigator url="/pages/myself/pages/myaccount/myaccount">
+    <view class='mine'>
+      <view class='name'>
+        <image class='icon' src='../../images/captal-small@2x.png'></image>
+        <text class='wenzi'>资金账户</text>
+        <image class='arrow' src='../../images/arrow-right@2x.png'></image>
+      </view>
+    </view>
+  </navigator> -->
+  <!-- 我的信息 -->
+  <!-- <navigator url="/pages/myself/pages/myinfo/myinfo">
+    <view class='mine'>
+      <view class='name'>
+        <image class='icon' src='../../images/mine-small@2x.png'></image>
+        <text class='wenzi'>我的信息</text>
+        <image class='arrow' src='../../images/arrow-right@2x.png'></image>
+      </view>
+    </view>
+  </navigator> -->
+  <!-- 我的订单 -->
+  <!-- <navigator url="/pages/myself/pages/myorder/myorder">
+    <view class='mine'>
+      <view class='name'>
+        <image class='icon' src='../../images/order-small@2x.png'></image>
+        <text class='wenzi'>我的订单</text>
+        <image class='arrow' src='../../images/arrow-right@2x.png'></image>
+        <view class='tag'>订单进程</view>
+      </view>
+    </view>
+  </navigator> -->
+  <navigator url="/pages/myself/pages/mypublish/mypublish">
+    <view class='mine'>
+      <view class='name'>
+        <image class='icon' src='../../images/order-small@2x.png'></image>
+        <text class='wenzi'>我的发布</text>
+        <image class='arrow' src='../../images/arrow-right@2x.png'></image>
+      </view>
+    </view>
+  </navigator>
+  <!-- <button open-type="getUserInfo" bindgetuserinfo="userInfoHandler"> Click me </button> -->
+</view>

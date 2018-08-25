@@ -1,0 +1,15 @@
+<view class="account">
+  <view class='left'>
+    <image class="img" src='../../../../images/01.png'></image>
+  </view>
+  <view class='middle'>
+    <view class='title'>与用户ccc的电桩分享正在进行中</view>
+    <view class='desc'>时间：2018年1月8日11：01</view>
+  </view>
+  <view class='right'>
+    <view class='tag'>进行中</view>
+    <view class='sex'>
+      <image class='seximg' src='../../../../images/arrow-right@2x.png'></image>
+    </view>
+  </view>
+</view>

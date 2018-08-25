@@ -1,0 +1,63 @@
+    <!--车辆列表  -->
+    <view class='car-list'>
+      <!-- <scroll-view scroll-y="true " style="height: 1204rpx; " bindscrolltoupper="publicupper" bindscrolltolower="publiclower" > -->
+        <view class='car-item' wx:for="{{carClueList}}" wx:key="index" id="{{item.bbsId}}" bindtap='toCarfansDetail'>
+          <view class='left'>
+            <image class='avator' src='{{item.avatar}}'></image>
+          </view>
+          <view class='right'>
+            <view class='one'>
+              <view class='name'>{{item.nickname}}</view>
+              <view class='sex'>
+                <image wx:if="{{item.sex == '1'}}" class='seximg' src='../../../../images/man@2x.png'></image>
+                <image wx:if="{{item.sex == '2'}}" class='seximg' src='../../../../images/woman@2x.png'></image>
+              </view>
+              <!-- <view class='hongbao'>
+                <image class="hongbaoimg " src='../../../../images/red-paper@2x.png'></image>
+              </view> -->
+              <view class='unfold' wx:if="{{!item.isFold}}" id="{{index}}" catchtap="foldClick">
+                <image class="unfoldimg " src='../../../../images/unfold@2x.png'></image>
+                <text>展 开</text>
+              </view>
+            </view>
+            <view class='two'>
+              <text class='time'>{{item.beforeTime}}前更新</text>
+            </view>
+          </view>
+          <view class='block' >
+            <view class='title'>{{item.bbsContent}}</view>
+            <view class='img-group' wx:if="{{item.isFold}}">
+              <block wx:for="{{item.bbsImg}}" wx:key="index" wx:if="{{index < 3}}">
+                <image class='img' src='{{item}}' mode="aspectFill "></image>
+              </block>
+            </view>
+            <view class='count' wx:if="{{item.isFold}}">
+              <view class='readcount'>
+                <image class="readcount-img " src='../../../../images/readcount@2x.png'></image>
+                <text class='font'>{{item.lookNum}}+</text>
+              </view>
+              <view class='readcount'>
+                <image class="commentcount-img " src='../../../../images/commentcount@2x.png'></image>
+                <text class='font'>{{item.commentNum}}+</text>
+              </view>
+              <view class='readcount' id="{{item.bbsId}}" catchtap="delete">
+                <image class="sharecount-img " src='../../../../images/del.png'></image>
+                <text class='font'>删除</text>
+              </view>
+              <view class='readcount' id="{{index}}" catchtap="foldClick">
+                <image class="fold-img " src='../../../../images/fold@2x.png'></image>
+                <text class='font'>折叠</text>
+              </view>
+            </view>
+          </view>
+        </view>
+        <view class="nomore loading"  hidden="{{!isNomore}}">
+          <image class='load' src='../../../../images/load.gif'></image>
+          正在加载
+        </view>
+        <view class="nomore" hidden="{{isNomore}}">
+          <text>没有更多了...</text>
+        </view>
+
+      <!-- </scroll-view> -->
+    </view>

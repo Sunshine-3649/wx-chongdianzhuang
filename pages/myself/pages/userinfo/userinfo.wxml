@@ -1,0 +1,15 @@
+<view >  
+    <picker bindchange="bindPickerChange0" value="{{brandindex}}" range="{{brands}}">  
+      <view class="picker">  
+        品牌：{{brands[brandindex]}}  
+      </view>  
+    </picker>  
+  </view>  
+    
+  <view >  
+    <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{object}}">  
+      <view class="picker">  
+        配件类别：{{object[index1]}}  
+      </view>  
+    </picker>  
+  </view>  

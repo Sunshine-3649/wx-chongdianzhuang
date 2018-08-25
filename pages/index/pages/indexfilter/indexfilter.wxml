@@ -1,0 +1,37 @@
+<view class='filter'>
+  <view class='block'>
+    <view class='name'>充电接口</view>
+    <text class='tag {{interfaceType == "1"?"active":""}}' id='1' bindtap='interfaceTypeChose'>国标接口</text>
+    <text class='tag {{interfaceType == "2"?"active":""}}' id='2' bindtap='interfaceTypeChose'>特斯拉</text>
+  </view>
+  <!-- <view class='block'>
+    <view class='name'>属性</view>
+    <text class='tag {{isPublic == "1"?"active":""}}' id='1' bindtap='isPublicChose'>公共</text>
+    <text class='tag {{isPublic == "2"?"active":""}}' id='2' bindtap='isPublicChose'>私人</text>
+  </view> -->
+  <!-- <view class='block'>
+    <view class='name'>电桩位置</view>
+    <text class='tag {{isGround == "1"?"active":""}}' id='1' bindtap='isGroundChose'>地上</text>
+    <text class='tag {{isGround == "2"?"active":""}}' id='2' bindtap='isGroundChose'>地下</text>
+  </view> -->
+  <view class='block'>
+    <view class='name'>按充电速度</view>
+    <text class='tag {{isFast == "1"?"active":""}}' id='1' bindtap='isFastChose'>直流快充</text>
+    <text class='tag {{isFast == "2"?"active":""}}' id='2' bindtap='isFastChose'>交流慢充</text>
+  </view>
+  <view class='block'>
+    <view class='name'>停车费用</view>
+    <text class='tag {{isParkMoney == "1"?"active":""}}' id='1' bindtap='isParkMoneyChose'>免费停车</text>
+  </view>
+  <view class='block'>
+    <view class='name'>运营商</view>
+    <view class='tag-group'>
+      <block wx:for-items="{{yunyingList}}" wx:key="index">
+        <text class='tag {{operatorId == item.operatorId?"active":""}}' id='{{item.operatorId}}' bindtap='operatorIdChose'>{{item.operatorName}}</text>
+      </block>
+      <view class="tag" wx:if="{{isMore}}" bindtap="more">展开更多...</view>
+      <view class="tag" wx:else bindtap="less">折叠...</view>
+    </view>
+  </view>
+  <button class='btn' type="primary" bindtap="search"> 搜索 </button>
+</view>

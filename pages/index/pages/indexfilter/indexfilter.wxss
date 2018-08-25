@@ -1,0 +1,45 @@
+.filter {
+  padding-bottom: 90rpx;
+}
+.block {
+  width: 750rpx;
+  min-height: 143rpx;
+  padding: 20rpx 0 20rpx 36rpx;
+  border-bottom: solid 1px #d3d3d3;
+  box-sizing: border-box;
+}
+
+.block .name {
+  font-size: 32rpx;
+  line-height: 32rpx;
+  font-weight: 600;
+  color: #2b2b2b;
+  margin-bottom: 15rpx;
+}
+
+.block .tag {
+  height: 35rpx;
+  line-height: 30rpx;
+  border: solid 1px #2192d0;
+  color: #2192d0;
+  font-weight: 600;
+  font-size: 24rpx;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0 11rpx;
+  margin-right: 31rpx;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.block .active {
+  color: #fff;
+  background-color: #2192d0;
+}
+button[type="primary"].btn {
+  background-color: #2192d0;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}

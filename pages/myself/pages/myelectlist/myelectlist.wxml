@@ -1,0 +1,19 @@
+<view class='electlist'>
+  <view class='add' bindtap="toDetail">添加我的电桩</view>
+  <view class='info' wx:for="{{electList}}" wx:key="index" >
+    <view class='left_info' id="{{item.chargeId}}" bindtap="toDetail">
+      <view class='name'>{{item.chargeName}}</view>
+      <view class='time'>{{item.createTime}}</view>
+    </view>
+    <view class='right_info' id="{{item.chargeId}}" bindtap="delClick">
+      <image class='del' src="../../../../images/del.png"></image>
+    </view>
+  </view>
+  <view class="nomore loading" hidden="{{!isNomore}}">
+    <image class='load' src='../../../../images/load.gif'></image>
+    正在加载
+  </view>
+  <view class="nomore" hidden="{{isNomore}}">
+    <text>没有更多了...</text>
+  </view>
+</view>

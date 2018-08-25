@@ -1,0 +1,107 @@
+<view class='elect'>
+  <view class='block'>
+    <view class='name'>充电接口</view>
+    <view class='tag {{interfaceType == 1?"active":""}}' id="1" bindtap="interClick">国标接口</view>
+    <view class='tag {{interfaceType == 2?"active":""}}' id="2" bindtap="interClick">特斯拉</view>
+  </view>
+  <view class='block'>
+    <view class='name'>按充电速度</view>
+    <view class='tag {{fastNum == 1?"active":""}}' id="1" bindtap="fastClick">直流快充</view>
+    <view class='tag {{slowNum == 1?"active":""}}' id="1" bindtap="slowClick">交流慢充</view>
+  </view>
+  <!-- <view class='block'>
+    <view class='name'>电桩位置</view>
+    <view class='tag'>地上</view>
+    <view class='tag'>地下</view>
+  </view> -->
+  <view class='detail'>
+    <view class='flag'>共享我的电桩</view>
+    <view class='info'>
+      <view class='title'>充电桩名称：</view>
+      <view class='desc'>
+        <input class='ipn' type="text" value="{{nameValue}}" bindinput="nameClick" placeholder="请输入名称" />
+      </view>
+    </view>
+    <view class='info'>
+      <view class='title'>充电桩位置：</view>
+      <view class='desc' bindtap="choseLocation">{{location}}</view>
+    </view>
+    <view class='info'>
+      <view class='title'>充电停车费：</view>
+      <view class='desc'>
+        <input class='ipn' type="number" value="{{parkValue}}" bindinput="parkClick" placeholder="请输入金额" />
+        <text>元/小时</text>
+      </view>
+    </view>
+    <view class='info'>
+      <view class='title'>充 电 费 用：</view>
+      <view class='desc'>
+        <input class='ipn' type="number" value="{{charValue}}" bindinput="charClick" placeholder="请输入金额" />
+        <text>元/小时</text>
+      </view>
+    </view>
+    <view class='info'>
+      <view class='title'>服 务 费 用：</view>
+      <view class='desc'>
+        <input class='ipn' type="number" value="{{servValue}}" bindinput="servClick" placeholder="请输入金额" />
+        <text>元/小时</text>
+      </view>
+    </view>
+    <view class='info'>
+      <view class='title'>预约时间段：</view>
+      <view class='desc'>
+        <picker mode="time" value="{{timestar}}" bindchange="bindTimeChangeStar">
+          <view class="weui-input">{{timestar}}</view>
+        </picker>
+        <text>-</text>
+        <picker mode="time" value="{{timeend}}" start="{{timestar}}" bindchange="bindTimeChangeEnd">
+          <view class="weui-input">{{timeend}}</view>
+        </picker>
+      </view>
+
+    </view>
+    <view class='info'>
+      <view class='title'>联 系 电 话：</view>
+      <view class='desc'>
+        <input class='ipn' type="number" value="{{phoneValue}}" bindinput="phoneClick" placeholder="请输入联系电话" />
+      </view>
+    </view>
+    <view class='info info_img'>
+      <view class='title img_title'>电桩照：（最多可上传9张）</view>
+      <!--  上传图片  -->
+      <view class="uploadImg">
+        <view bindtap="choseImgs" class="show_image {{isaddImgShow?'show add':'hide'}}" wx:if="{{!showlist.length}}">
+          <image class='image' src="../../../../images/shangchuanImg.png"></image>
+        </view>
+
+        <view class="show_image" wx:for="{{showlist}}" wx:key="index">
+          <image class='image' mode="aspectFill" src="{{item}}" data-src="{{item}}" bindtap="previewImage">
+          </image>
+          <image src='../../../../images/cuowu@2x.png' wx:if="{{flag == 1}}" class='delfult' id="{{index}}" catchtap='delfultImg'></image>
+        </view>
+      </view>
+      <!-- <view>
+        <view class='imgs-bg' wx:for-items="{{imgsArr}}" wx:key="idex">
+          <image class='img-bg' src='{{item}}' mode='aspectFill'></image>
+        </view>
+        <view class='imgs-bg'>
+          <view class='imgs'>
+            <image class='img' src='../../../../images/add@2x.png' bindtap='choseImg'></image>
+          </view>
+        </view>
+      </view> -->
+    </view>
+  </view>
+  <view class='proto'>
+    <view class='proto-title'>*电桩共享协议*</view>
+    <view class='proto-desc'>1.用户通过充充充平台添加并发布个人充电站信息即默认同意向平台其他用户展示个人充电站信息。
+    </view>
+    <view class='proto-desc'>2.用户添加个人充电站请务必保证电站信息的准确无误。若信息有误，请及时修改个人电站信息。
+    </view>
+  </view>
+  <view class='argee' bindtap="radioChange">
+    <radio checked="{{isChecked}}" />
+    <text class='agree_tip'>同意本协议</text>
+  </view>
+  <button bindtap="saveOrUpdateCharge" type="{{isChecked?'primary':'default'}}" disabled="{{!isChecked}}">保存</button>
+</view>

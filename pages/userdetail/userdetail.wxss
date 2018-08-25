@@ -1,0 +1,103 @@
+.car-item {
+  padding: 25rpx 0 15rpx 31rpx;
+  border-bottom: 2rpx solid #d3d3d3;
+}
+
+.left {
+  width: 83rpx;
+  height: 83rpx;
+  display: inline-block;
+}
+
+.left .avator {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.right {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 15rpx;
+}
+
+.one,
+.two,
+.three {
+  width: 615rpx;
+  line-height: 28rpx;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.one .tag,
+.two .tag {
+  /* width: 120rpx; */
+  max-width: 200rpx;
+  height: 29rpx;
+  line-height: 29rpx;
+  border: solid 1px #2192d0;
+  padding: 0 10rpx;
+  color: #2192d0;
+  font-size: 16rpx;
+  box-sizing: border-box;
+  border-radius: 10rpx;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.one .hongbao {
+  width: 37rpx;
+  height: 52rpx;
+  position: absolute;
+  right: 145rpx;
+  top: -14rpx;
+}
+
+.one .hongbaoimg {
+  width: 100%;
+  height: 100%;
+}
+
+.one .name {
+  width: 343rpx;
+  font-size: 28rpx;
+}
+
+.one .sex {
+  width: 18rpx;
+  height: 34rpx;
+  display: inline-block;
+  position: absolute;
+  right: 20rpx;
+  top: 38rpx;
+}
+
+.one .sex .seximg {
+  width: 100%;
+  height: 100%;
+}
+
+.two {
+  margin-top: 18rpx;
+}
+
+.two .time {
+  width: 343rpx;
+  color: #939393;
+  font-size: 24rpx;
+}
+.three .phone {
+  display: flex;
+  line-height: 40rpx;
+  color: #2192d0;
+  font-size: 24rpx;
+}
+.img-count {
+  width: 16rpx;
+  height: 8rpx;
+  margin-left: 30rpx;
+}

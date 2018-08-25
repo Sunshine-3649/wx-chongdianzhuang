@@ -1,0 +1,43 @@
+.mycar {
+  display: flex;
+  justify-content: space-around;
+}
+.left,
+.right {
+  display: flex;
+  width: 375rpx;
+  flex-flow: column nowrap;
+  text-align: center;
+  color: #2192d0;
+}
+.box {
+  line-height: 100rpx;
+  height: 100rpx;
+  font-size: 36rpx;
+}
+.title {
+  background: #2192d0;
+  color: #fff;
+}
+.active {
+  background: #2192d0;
+  color: #fff;
+}
+.content {
+  border-top: solid 1px #999;
+  border-left: solid 1px #999;
+  border-right: solid 1px #999;
+}
+.content:last-child {
+  border-bottom: solid 1px #999;
+}
+.btn {
+  width: 750rpx;
+  height: 110rpx;
+  color: #ffffff;
+  background-color: #2192d0;
+  line-height: 110rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

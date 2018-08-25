@@ -1,0 +1,283 @@
+/* pages/index/index.wxss */
+
+/* 搜索区域  */
+
+.flex-header {
+  display: flex;
+  line-height: 100rpx;
+  height: 100rpx;
+  background-color: #2192d0;
+  font-size: 30rpx;
+  color: #fff;
+}
+
+.flex-left {
+  width: 200rpx;
+  flex: 0 1 200rpx;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.search,
+.inputsearch,
+.clear {
+  flex-direction: row;
+}
+
+.inputsearch {
+  padding-top: 7rpx;
+  color: #000000;
+}
+
+.search,
+.clear {
+  padding-top: 15rpx;
+}
+
+.flex-right {
+  margin: 21rpx 0;
+  box-sizing: border-box;
+  border-radius: 40rpx;
+  background: #fff;
+  display: flex;
+}
+
+.search,
+.clear {
+  margin: 0 20rpx;
+}
+
+.search {
+  width: 31rpx;
+  height: 33rpx;
+}
+
+.clear {
+  width: 30rpx;
+  height: 30rpx;
+}
+.arr-down {
+  width: 34rpx;
+  height: 18rpx;
+}
+
+/*tab切换  */
+
+.flex-tab {
+  display: flex;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+  box-sizing: border-box;
+}
+
+.public {
+  width: 308rpx;
+  /* border: solid 1rpx #c0c0c0; */
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #2192d0;
+}
+
+.private {
+  width: 308rpx;
+  border: solid 1px #d3d3d3;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #2192d0;
+}
+
+.chose {
+  width: 154rpx;
+  border: solid 1px #d3d3d3;
+  box-sizing: border-box;
+}
+.chose .chose-img {
+  width: 48rpx;
+  height: 42rpx;
+  position: relative;
+  top: 10rpx;
+}
+.current {
+  background-color: #ffffff;
+  color: #2192d0;
+}
+/*公共电站列表  */
+.public-item {
+  display: flex;
+  width: 750rpx;
+  height: 225rpx;
+  border-bottom: solid 1px #d3d3d3;
+}
+.public-left {
+  width: 560rpx;
+  padding: 16rpx 0 30rpx 36rpx;
+}
+.public-left .left-one {
+  line-height: 16rpx;
+  display: flex;
+  color: #2b2b2b;
+  font-size: 34rpx;
+}
+.public-left .left-one .name {
+  width: 400rpx;
+  line-height: 60rpx;
+  font-weight: 700;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.public-left .left-one .private-name {
+  width: 210rpx;
+  line-height: 60rpx;
+  font-weight: 700;
+}
+.public-left .left-one .tag {
+  width: 128rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  border: solid 1px #2192d0;
+  color: #2192d0;
+  font-weight: 600;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  margin-left: 23rpx;
+}
+.public-left .left-two,
+.left-three,
+.left-four {
+  display: flex;
+  font-size: 26rpx;
+  line-height: 26rpx;
+  color: #2b2b2b;
+  margin-top: 19rpx;
+}
+.public-left .two-left,
+.three-left {
+  width: 209rpx;
+}
+.public-right {
+  width: 154rpx;
+  position: relative;
+}
+.public-right .weizhi {
+  width: 64rpx;
+  height: 64rpx;
+  position: absolute;
+  left: 41rpx;
+  top: 48rpx;
+}
+.public-right .juli {
+  position: absolute;
+  left: 40rpx;
+  top: 127rpx;
+  color: #2b2b2b;
+  font-size: 26rpx;
+}
+
+.container {
+  display: block;
+  background-color: #fafafa;
+  padding: 0;
+}
+
+.top-menu {
+  display: flex;
+  position: fixed;
+  height: 80rpx;
+  z-index: 10;
+  background-color: #fff;
+  width: 100%;
+  top: 0;
+  left: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  border-top: 2rpx solid #ddd;
+  border-bottom: 2rpx solid #ddd;
+  font-size: 11pt;
+  color: #bdbdbd;
+}
+
+.line {
+  width: 2rpx;
+  height: 100%;
+  background-color: #ddd;
+}
+
+.state-menu {
+  display: flex;
+  position: fixed;
+  left: 0;
+  height: 200rpx;
+  top: 80rpx;
+  width: 100%;
+  z-index: 9;
+  background-color: #fff;
+  flex-direction: row;
+  border-bottom: 2rpx solid #ddd;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hidden.state-menu {
+  transform: translateY(-200rpx);
+  transition: all 0.4s ease;
+  visibility: hidden;
+}
+
+.show.state-menu {
+  transform: translateY(0);
+  transition: all 0.4s ease;
+  visibility: visible;
+}
+
+.dialog-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 8;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.picker-view {
+  width: 100%;
+  display: flex;
+  z-index: 12;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  height: 40vh;
+}
+
+.picker-item {
+  line-height: 70rpx;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+  text-align: center;
+}
+.loading {
+  line-height: 50rpx;
+}
+.load {
+  width: 32rpx;
+  height: 32rpx;
+}
+.nomore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cecaca;
+  font-size: 18rpx;
+}

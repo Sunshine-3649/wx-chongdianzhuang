@@ -1,0 +1,38 @@
+<view class="publish">
+
+  <!--  输入标题  -->
+  <!-- <view class="publish_title">
+    <input type='text' bindinput="bindTitleInput" placeholder='标题' value='{{titleValue}}'></input> -->
+  <!--  发布按钮  -->
+  <!-- <view class="release" bindtap='publishInfo'>
+      发布
+    </view>
+  </view> -->
+
+  <!--  输入内容  -->
+  <view class="publish_content">
+    <textarea bindinput="bindContentInput" placeholder='请输入内容' maxlength='150' value='{{contentValue}}'>
+    </textarea>
+  </view>
+  <text class="tip">150个字以内哦</text>
+
+  <view class="addimgText">
+    添加图片:
+  </view>
+
+  <!--  上传图片  -->
+  <view class="uploadImg">
+    <view bindtap="choseImgs" class="{{isaddImgShow?'show add':'hide'}}" wx:if="{{!showlist.length}}">
+      <image src="../../../../images/shangchuanImg.png"></image>
+    </view>
+
+    <view class="show_image" wx:for="{{showlist}}" wx:key="index">
+      <image class='image' mode="aspectFill" src="{{item}}" data-src="{{item}}" bindtap="previewImage">
+      </image>
+      <image src='../../../../images/cuowu@2x.png' class='delfult' id="{{index}}" catchtap='delfultImg'></image>
+    </view>
+  </view>
+  <view class="btn" bindtap='publishInfo'>
+    发布
+  </view>
+</view>

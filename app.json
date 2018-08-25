@@ -1,0 +1,58 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/myself/myself",
+    "pages/index/pages/publicdetail/publicdetail",
+    "pages/index/pages/privatedetail/privatedetail",
+    "pages/index/pages/indexfilter/indexfilter",
+    "pages/indexsearch/indexsearch",
+    "pages/userdetail/userdetail",
+    "pages/carfans/carfans",
+    "pages/carfans/pages/carfansdetail/carfansdetail",
+    "pages/carfans/pages/carpublish/carpublish",
+    "pages/myself/pages/personalpage/personalpage",
+    "pages/myself/pages/userinfo/userinfo",
+    "pages/myself/pages/userAgreement/userAgreement",
+    "pages/myself/pages/improveInfo/improveInfo",
+    "pages/myself/pages/mycar/mycar",
+    "pages/myself/pages/myelectlist/myelectlist",
+    "pages/myself/pages/myelect/myelect",
+    "pages/myself/pages/myaccount/myaccount",
+    "pages/myself/pages/myinfo/myinfo",
+    "pages/myself/pages/myorder/myorder",
+    "pages/myself/pages/mypublish/mypublish"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2192D0",
+    "navigationBarTitleText": "充充充",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#2192D0",
+    "borderStyle": "black",
+    "backgroundColor": "#FFFFFF",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "充充",
+        "iconPath": "images/charge@2x.png",
+        "selectedIconPath": "images/charge-current@2x.png"
+      },
+      {
+        "pagePath": "pages/carfans/carfans",
+        "text": "车友",
+        "iconPath": "images/car@2x.png",
+        "selectedIconPath": "images/car-current@2x.png"
+      },
+      {
+        "pagePath": "pages/myself/myself",
+        "text": "我的",
+        "iconPath": "images/mine@2x.png",
+        "selectedIconPath": "images/mine-current@2x.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+<view class='public-list'>
+  <scroll-view scroll-y="true" style="height: 1096rpx;" bindscrolltolower="lower">
+    <view class='public-item'>
+      <view class='public-left'>
+        <view class='left-one'>
+          <view wx:if="{{publicInfo.avatar}}" id="{{publicInfo.uid}}" class='avator' catchtap="toUserDetail">
+            <image class='avator_bg' src='{{publicInfo.avatar}}'></image>
+          </view>
+          <text class='name'>{{publicInfo.chargeName}}</text>
+        </view>
+        <text class='tag' wx:if="{{publicInfo.isPublic == 1}}">对外开放</text>
+        <view class='left-three'>
+          <text class='three'>用户评分：{{publicInfo.evaluation}}</text>
+        </view>
+        <view class='left-three'>
+          <text class='three'>地址：{{publicInfo.location}}</text>
+        </view>
+        <view class='left-two'>
+          <text class='two-left'>快充：{{publicInfo.fastNum}}</text>
+          <text class='two'>慢充：{{publicInfo.slowNum}}</text>
+        </view>
+      </view>
+      <view class='public-right' bindtap="openLocation">
+        <image class='weizhi' src='../../../../images/weizhi@2x.png'></image>
+        <view class='juli'>{{distance}}m</view>
+      </view>
+    </view>
+    <view class='public-info'>
+      <view class='yunyingshang'>运营商：{{publicInfo.operatorName}}</view>
+      <view class='tingchefei'>停车费：{{publicInfo.parkExpense}}</view>
+      <view class='fuwufeiyong'>服务费用：{{publicInfo.servPrice}}元/小时</view>
+      <view class='chongdianfeiyong'>充电费用：{{publicInfo.elecPrice}}元/小时</view>
+      <view class='yunyingshijian'>营运时间：{{publicInfo.openTime}}</view>
+      <view class='yunyingshijian'>电话号码：{{publicInfo.phone}}</view>
+    </view>
+    <view class='img_groups' wx:if="{{publicInfo.imgArr && publicInfo.imgArr.length}}">
+      <view class='img_groups_title'>电桩照：</view>
+      <block wx:for="{{publicInfo.imgArr}}" wx:key="index">
+        <image class='img' src='{{item}}' mode="aspectFill " data-src="{{item}}" bindtap="previewImage"></image>
+      </block>
+    </view>
+    <view class='progress' wx:if="{{voteInfo.length}}">
+      <view class='title'>问题反馈</view>
+      <view class='block' wx:for-items="{{voteInfo}}" wx:key="index">
+        <view class='block-item left' id="{{item.cvId}}" bindtap="checkCvIdYes">
+          <view>是</view>
+          <view>{{item.yesNum}}</view>
+        </view>
+        <progress class='block-item middle' stroke-width="32" percent="{{item.yesPersen}}" activeColor="#86CDF3" />
+
+        <view class='block-item right' id="{{item.cvId}}" bindtap="checkCvIdNo">
+          <view>否</view>
+          <view>{{item.noNum}}</view>
+        </view>
+        <view class="text">{{item.voteName}}</view>
+      </view>
+    </view>
+    <view class='pinglun'>
+      <view class='title'>最新评论：</view>
+
+      <block wx:if="{{commentList.length}}" wx:for="{{commentList}}" wx:key="index">
+        <view class='userinfo'>
+          <view class='avator' id="{{item.uid}}" catchtap="toUserDetail">
+            <image class='avator_bg' src='{{item.avatar}}'></image>
+          </view>
+          <view class='info'>
+            <view class='title'>
+              <text class='name'>{{item.nickname}}</text>
+              <text class='tag' wx:if="{{item.carType}}">{{item.carType}}</text>
+              <!-- <text class='tag' wx:else>暂无车型</text> -->
+            </view>
+            <view class='time'>{{item.createTime}}</view>
+          </view>
+        </view>
+        <view class='desc'>{{item.content}}</view>
+        <view class="btn-groups">
+          <view class="group" id="{{item.commentId}}" bindtap="delComment" wx:if="{{item.uid == uid}}">
+            <image class="del" src="../../../../images/del.png"></image>
+            <view>删除</view>
+          </view>
+          <view class="group" style="margin-right: 32rpx;" id="{{item.commentId}}" bindtap="replyCommentShow">
+            <image class="replay_icon" src="../../../../images/replay.png"></image>
+            <view>回复</view>
+          </view>
+
+        </view>
+        <!-- wx:if="{{item.replyEntities.length}}" -->
+        <view class="replay" wx:for="{{item.replyEntities}}" wx:key="index">
+          <view class="replay-name">
+            <view class="name">{{item.nickname}}</view>
+            <view class="time">{{item.createTime}}</view>
+          </view>
+          <view class="replay-content">{{item.content}}</view>
+          <view class="btn-groups">
+            <view class="group" id="{{item.commentId}}" bindtap="delComment" wx:if="{{item.uid == uid}}">
+              <image class="del" src="../../../../images/del.png"></image>
+              <view>删除</view>
+            </view>
+            <!-- <view class="group" id="{{item.commentId}}" bindtap="replyCommentShow">
+              <image class="replay_icon" src="../../../../images/replay.png"></image>
+              <view>回复</view>
+            </view> -->
+
+          </view>
+        </view>
+      </block>
+      <view wx:if="{{commentList.length == 0}}" class="noreplay">暂无评论...</view>
+
+    </view>
+  </scroll-view>
+  <view class='btn' bindtap="addCommentShow">我要评论</view>
+</view>
+<view class="mark" hidden="{{isShow}}" bindtap="hideCommentShow">
+  <view class="section" hidden="{{isShow}}">
+    <!-- <form bindsubmit="bindFormSubmit">
+      <textarea placeholder="这个只有在按钮点击的时候才聚焦" auto-height focus="{{focus}}" name="textarea" />
+      <button form-type="submit"> 提交 </button>
+    </form> -->
+    <textarea class="content" value="{{content}}" bindinput="myContent" auto-height focus="{{focus}}" />
+    <view class="btn-area">
+      <button type="primary" catchtap="addComment">添加评论</button>
+    </view>
+  </view>
+</view>

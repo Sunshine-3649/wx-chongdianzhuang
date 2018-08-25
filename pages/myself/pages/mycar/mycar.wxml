@@ -1,0 +1,19 @@
+<view class="mycar">
+  <view class="left">
+    <view class="box title">品牌</view>
+    <scroll-view scroll-y="true" style="height: 996rpx;">
+      <view class="box content {{item.brandId == brandId?'active':''}}" wx:for="{{brandList}}" wx:key="index" data-id="{{item.brandId}}"
+        data-idx="{{index}}" bindtap="brandCLick">{{item.brandName}}</view>
+    </scroll-view>
+  </view>
+  <view class="right">
+    <view class="box title">型号</view>
+    <scroll-view scroll-y="true" style="height: 996rpx;">
+      <view class="box content {{item.modelId == carId?'active':''}}" wx:for="{{carItem}}" wx:key="index" data-id="{{item.modelId}}"
+        data-idx="{{index}}" bindtap="carCLick">{{item.modelName}}</view>
+    </scroll-view>
+
+  </view>
+</view>
+
+<button class='btn' bindtap="saveOrUpdate">确定</button>

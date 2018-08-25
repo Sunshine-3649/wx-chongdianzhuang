@@ -1,0 +1,199 @@
+.container{
+  position: fixed;
+  width: 100%;
+  height: 1334rpx;
+  background: #F7F7F7;
+  top: 0;
+}
+.personal_ID{
+  position: relative;
+  width: 100%;
+  height: 90rpx;
+  background: #FFFFFF;
+  border-bottom: 1px solid #D3D3D3;
+}
+.personal_ID_text{
+  position: absolute;
+  font-size: 28rpx;
+  font-weight: Regular;
+  font-family: PingFang-SC-Regular;
+  color: #2B2B2B;
+  top: 31rpx;
+  left: 32rpx;
+}
+
+.box{
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  top: 8rpx;
+  right: 145rpx;
+}
+.personal_WXnum{
+  position: relative;
+  width: 100%;
+  height: 90rpx;
+  background: #FFFFFF;
+  border-bottom: 1px solid #D3D3D3;
+}
+.personal_WXnum_text{
+  position: absolute;
+  font-size: 28rpx;
+  font-weight: Regular;
+  font-family: PingFang-SC-Regular;
+  color: #2B2B2B;
+  top: 31rpx;
+  left: 32rpx;
+}
+.personal_WXnum_choose{
+  position: absolute;
+  width: 28rpx;
+  height: 28rpx;
+  border: 4rpx solid #FF6767;
+  border-radius: 20rpx;
+  top: 22rpx;
+  right: 20rpx;
+}
+.personal_WXnum_nochoose{
+  position: absolute;
+  width: 28rpx;
+  height: 28rpx;
+  border-radius: 10rpx;
+  background: #FF6767;
+  /* top: 5rpx; 
+  right: 5rpx;  */
+}
+.personal_WXnum_public{
+  position: absolute;
+  font-size: 28rpx;
+  font-weight: Regular;
+  font-family: PingFang-SC-Regular;
+  color: #2192D0;
+  top: 28rpx;
+  right: 30rpx;
+}
+
+.personal_sex{
+  position: relative;
+  width: 100%;
+  height: 90rpx;
+  background: #FFFFFF;
+  border-bottom: 1px solid #D3D3D3;
+}
+.personal_sex_text{
+  position: absolute;
+  font-size: 28rpx;
+  font-weight: Regular;
+  font-family: PingFang-SC-Regular;
+  color: #2B2B2B;
+  top: 31rpx;
+  left: 32rpx;
+}
+
+.personal_age{
+  position: relative;
+  width: 100%;
+  height: 90rpx;
+  background: #FFFFFF;
+  border-bottom: 1px solid #D3D3D3;
+}
+.personal_age_text{
+  position: absolute;
+  font-size: 28rpx;
+  font-weight: Regular;
+  font-family: PingFang-SC-Regular;
+  color: #2B2B2B;
+  top: 31rpx;
+  left: 32rpx;
+}
+
+.box2{
+  position: absolute;
+  width: 80rpx;
+  height: 80rpx;
+  top: 8rpx;
+  right: 145rpx;
+}
+.personal_place{
+  position: relative;
+  width: 100%;
+  height: 90rpx;
+  background: #FFFFFF;
+  border-bottom: 1px solid #D3D3D3;
+}
+.personal_place_text{
+  position: absolute;
+  font-size: 28rpx;
+  font-weight: Regular;
+  font-family: PingFang-SC-Regular;
+  color: #2B2B2B;
+  top: 31rpx;
+  left: 32rpx;
+}
+.personal_place_choose{
+  position: absolute;
+  width: 28rpx;
+  height: 28rpx;
+  border: 4rpx solid #FF6767;
+  border-radius: 20rpx;
+  top: 22rpx;
+  right: 20rpx;
+}
+.personal_place_nochoose{
+  position: absolute;
+  width: 28rpx;
+  height: 28rpx;
+  border-radius: 10rpx;
+  background: #FF6767;
+  /* top: 1rpx;
+  right: 1rpx; */
+}
+.personal_place_public{
+  position: absolute;
+  font-size: 28rpx;
+  font-weight: Regular;
+  font-family: PingFang-SC-Regular;
+  color: #2192D0;
+  top: 28rpx;
+  right: 30rpx;
+}
+
+.personal_article{
+  position: relative;
+  width: 100%;
+  height: 90rpx;
+  background: #FFFFFF;
+  border-bottom: 1px solid #D3D3D3;
+}
+.personal_article_text{
+  position: absolute;
+  font-size: 28rpx;
+  font-weight: Regular;
+  font-family: PingFang-SC-Regular;
+  color: #2B2B2B;
+  top: 31rpx;
+  left: 32rpx;
+}
+.user_agreement{
+  position: relative;
+  width: 200rpx;
+  height: 25rpx;
+  z-index: 99;
+  font-size: 24rpx;
+  color: #FF6767;
+  margin: 40rpx auto;
+}
+
+/*  完善用户信息按钮  */
+.improveInfo{
+  position: fixed;
+  background: #2192D0;
+  width: 100%;
+  height: 90rpx;
+  bottom: 0rpx;
+  left: 0rpx;
+  color: #FFFFFF;
+  font-size: 36rpx;
+  text-align: center;
+  line-height: 90rpx;
+}

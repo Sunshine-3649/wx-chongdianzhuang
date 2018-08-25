@@ -1,0 +1,15 @@
+.info {
+  padding: 19rpx 0 19rpx 34rpx;
+  border-bottom: solid 2rpx #cccccc;
+}
+.title {
+  line-height: 28rpx;
+  font-size: 28rpx;
+  color: #2B2B2B;
+}
+.desc {
+  line-height: 18rpx;
+  color: #8D8C8C;
+  font-size: 18rpx;
+  margin-top: 17rpx;
+}

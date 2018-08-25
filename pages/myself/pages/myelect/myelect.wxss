@@ -1,0 +1,195 @@
+.elect {
+  background-color: rgb(240, 240, 240);
+}
+
+.block {
+  padding: 22rpx 38rpx;
+  background-color: #fff;
+}
+
+.name {
+  font-size: 28rpx;
+  color: #2b2b2b;
+}
+
+.tag {
+  display: inline-block;
+  line-height: 41rpx;
+  height: 41rpx;
+  font-size: 22rpx;
+  margin-right: 30rpx;
+  padding: 0 12rpx;
+  border-radius: 10rpx;
+  border: solid 1px #2192d0;
+  background-color: #fff;
+  color: #2192d0;
+}
+
+.detail {
+  margin-top: 33rpx;
+}
+
+.flag {
+  line-height: 84rpx;
+  font-size: 34rpx;
+  background-color: #fff;
+  color: #2b2b2b;
+  text-align: center;
+  font-weight: 600;
+}
+
+.info {
+  background-color: #fff;
+  line-height: 23rpx;
+  font-size: 23rpx;
+  padding: 23rpx 0 23rpx 38rpx;
+  display: flex;
+}
+
+.info .title {
+  width: 152rpx;
+  line-height: 50rpx;
+}
+
+.ipn {
+  line-height: 25rpx;
+}
+.info .desc {
+  width: 350rpx;
+  display: flex;
+  font-size: 23rpx;
+  border-bottom: solid 1px #ccc;
+}
+
+.desc text {
+  width: 100rpx;
+  line-height: 50rpx;
+}
+
+.imgs {
+  width: 218rpx;
+  height: 218rpx;
+  display: flex;
+}
+.imgs-bg {
+  width: 218rpx;
+  height: 218rpx;
+  display: inline-block;
+  margin-right: 13rpx;
+  border: solid 1px #cccccc;
+}
+.img-bg {
+  width: 100%;
+  height: 100%;
+}
+.img {
+  width: 78rpx;
+  height: 78rpx;
+  margin-right: 13rpx;
+  margin: auto;
+}
+
+.proto {
+  background-color: #fff;
+}
+
+.proto-title {
+  padding-top: 53rpx;
+  text-align: center;
+  font-size: 30rpx;
+  color: #f74f4f;
+}
+
+.proto-desc {
+  margin-top: 44rpx;
+  line-height: 42rpx;
+  color: #2b2b2b;
+  font-size: 24rpx;
+  padding: 0 25rpx 0 28rpx;
+}
+
+.argee {
+  text-align: center;
+  margin: 74rpx 0 92rpx 0;
+}
+
+button {
+  border-radius: 0;
+}
+button[type="primary"] {
+  background-color: #2192d0;
+}
+.agree_tip {
+  font-size: 24rpx;
+  color: #f74f4f;
+}
+.active {
+  color: #fff;
+  background-color: #2192d0;
+}
+
+.picker{
+  padding: 19rpx 26rpx;
+  background-color: #FFFFFF;
+}
+.weui-input {
+  width: 130rpx;
+  text-align: center;
+}
+
+/* 上传 */
+.info_img {
+  display: flex;
+  flex-direction: column;
+}
+.info .img_title {
+  width: 100%;
+}
+radio.radio_btn {
+  width: 30rpx;
+}
+.uploadImg {
+  width: 100%;
+}
+.gelixian {
+  width: 680rpx;
+  height: 4rpx;
+  background: #e4e4e4;
+  margin-left: 35rpx;
+}
+
+.add {
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+}
+
+.add image {
+  width: 130rpx;
+  height: 130rpx;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+}
+
+.show_image {
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+  /* border: 1px dashed #999; */
+  margin-left: 30rpx;
+  margin-top: 20rpx;
+  overflow: hidden;
+}
+.show_image .image {
+  width: 150rpx;
+  height: 150rpx;
+}
+.delfult {
+  position: absolute;
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: -15rpx;
+  margin-top: -15rpx;
+}

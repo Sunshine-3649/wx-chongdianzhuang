@@ -1,0 +1,209 @@
+.public-item {
+  display: flex;
+  width: 750rpx;
+  height: 280rpx;
+  border-bottom: solid 1px #d3d3d3;
+}
+
+.public-left {
+  width: 560rpx;
+  padding: 16rpx 0 16rpx 36rpx;
+}
+
+.public-left .left-one {
+  line-height: 16rpx;
+  display: flex;
+  color: #2b2b2b;
+  font-size: 34rpx;
+}
+
+.public-left .left-one .name {
+  width: 125rpx;
+  line-height: 60rpx;
+  font-weight: 700;
+}
+.public-left .left-one .tag {
+  height: 46rpx;
+  line-height: 46rpx;
+  border: solid 1px #2192D0;
+  color: #2192D0;
+  font-weight: 600;
+  font-size: 28rpx;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center
+
+}
+
+.public-left .left-one .private-name {
+  width: 210rpx;
+  line-height: 60rpx;
+  font-weight: 700;
+}
+
+.public-left .tag {
+  display: inline-block;
+  height: 35rpx;
+  line-height: 35rpx;
+  border: solid 1px #2192d0;
+  color: #2192d0;
+  font-weight: 600;
+  font-size: 20rpx;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0 8rpx;
+  margin: 0;
+  margin-right: 30rpx;
+}
+
+.public-left .left-two, .left-three, .left-four {
+  display: flex;
+  font-size: 26rpx;
+  line-height: 26rpx;
+  color: #2b2b2b;
+  margin-top: 19rpx;
+}
+
+ .public-left .two-left {
+  width: 209rpx;
+} 
+
+.public-right {
+  width: 154rpx;
+  position: relative;
+}
+
+.public-right .weizhi {
+  width: 64rpx;
+  height: 64rpx;
+  position: absolute;
+  left: 41rpx;
+  top: 48rpx;
+}
+
+.public-right .juli {
+  position: absolute;
+  left: 40rpx;
+  top: 127rpx;
+  color: #2b2b2b;
+  font-size: 26rpx;
+}
+
+.public-info {
+  padding: 30rpx 0 30rpx 36rpx;
+  font-size: 25rpx;
+  color: #2b2b2b;
+  line-height: 25rpx;
+  border-bottom: solid 1px #d3d3d3;
+}
+
+.tingchefei, .fuwufeiyong, .chongdianfeiyong, .yunyingshijian {
+  margin-top: 19rpx;
+}
+
+.progress {
+  padding: 30rpx 0 30rpx 36rpx;
+  border: solid 1px #d3d3d3;
+}
+
+.progress .title {
+  color: #2b2b2b;
+  font-size: 26rpx;
+}
+
+.progress .block {
+  height: 64rpx;
+  display: flex;
+  margin-top: 30rpx;
+}
+
+.block-item {
+  flex-direction: row;
+  text-align: center;
+}
+
+.progress .block .left {
+  width: 108rpx;
+  font-size: 27rpx;
+  text-align: center;
+}
+
+.left .left-item {
+  display: block;
+}
+
+.progress .block .middle {
+  width: 461rpx;
+  border-radius: 20rpx;
+}
+
+.progress .block .right {
+  width: 144rpx;
+  font-size: 27rpx;
+  text-align: center;
+}
+
+.pinglun {
+  padding: 30rpx 0 0 36rpx;
+}
+
+.pinglun .title {
+  font-size: 26rpx;
+  color: #2b2b2b;
+  margin-bottom: 19rpx;
+}
+
+.userinfo {
+  display: flex;
+}
+
+.avator {
+  width: 72rpx;
+  height: 72rpx;
+  border: solid 1px #2192d0;
+  margin-right: 22rpx;
+}
+.info .title {
+  margin-bottom: 12rpx;
+}
+.info .time {
+  font-size: 24rpx;
+  color: #939393;
+}
+.info .title .name {
+  font-size: 30rpx;
+  color: #2192d0;
+  margin-right: 30rpx;
+}
+
+.info .title .tag {
+  display: inline-block;
+  height: 35rpx;
+  line-height: 35rpx;
+  border: solid 1px #2192d0;
+  color: #2192d0;
+  font-weight: 600;
+  font-size: 20rpx;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0 8rpx;
+  margin: 0;
+  margin-right: 30rpx;
+}
+.pinglun .desc {
+  margin-top: 30rpx;
+  color: #2E2E2E;
+  font-size: 36rpx;
+}
+.btn {
+  width: 750rpx;
+  height: 110rpx;
+  color: #ffffff;
+  background-color: #2192D0;
+  line-height: 110rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}

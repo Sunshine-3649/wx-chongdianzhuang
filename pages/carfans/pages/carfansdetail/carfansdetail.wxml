@@ -1,0 +1,133 @@
+<view class="cardetail">
+  <scroll-view scroll-y="true" style="height: 1096rpx;" bindscrolltolower="lower">
+    <view class='car-item'>
+      <view class='left' id="{{carClueInfo.uid}}"  catchtap="toUserDetail">
+        <image class='avator' src='{{carClueInfo.avatar}}'></image>
+      </view>
+      <view class='right'>
+        <view class='one'>
+          <view class='name'>{{carClueInfo.nickname}}</view>
+          <view class='sex'>
+            <image class='seximg' src='../../../../images/man@2x.png'></image>
+          </view>
+          <!-- <view class='hongbao'>
+                <image class="hongbaoimg " src='../../../../images/red-paper@2x.png'></image>
+              </view> -->
+        </view>
+        <view class='two'>
+          <text class='time'>{{carClueInfo.beforeTime}}前更新</text>
+        </view>
+      </view>
+      <view class='block'>
+        <view class='title'>{{carClueInfo.bbsContent}}</view>
+        <view class='img-group'>
+          <block wx:for="{{carClueInfo.bbsImg}}" wx:key="index" >
+            <image class='img' src='{{item}}' mode="aspectFill " data-src="{{item}}" bindtap="previewImage" ></image>
+          </block>
+        </view>
+        <view class='count'>
+          <view class='readcount'>
+            <image class="readcount-img " src='../../../../images/readcount@2x.png'></image>
+            <text class='font'>{{carClueInfo.lookNum}}+</text>
+          </view>
+          <view class='readcount'>
+            <image class="commentcount-img " src='../../../../images/commentcount@2x.png'></image>
+            <text class='font'>{{carClueInfo.commentNum}}+</text>
+          </view>
+          <view class='readcount' id="{{carClueInfo.bbsId}}" bindtap="reportClick">
+            <image class="report-img " src='../../../../images/report.png'></image>
+            <text class='font'>举报</text>
+          </view>
+          <!-- <view class='readcount'>
+                <image class="report-img" src='../../../../images/report@2x.png'></image>
+                <text class='font'>{{carClueInfo.bbsContent}}+</text>
+              </view> -->
+          <!-- <view class='readcount'>
+                <image class="collect-img " src='../../../../images/collect@2x.png'></image>
+                <text class='font'>99+</text>
+              </view> -->
+        </view>
+      </view>
+    </view>
+    <!-- <view class='pinglun'>
+          <view class='userinfo'>
+            <view class='avator'>
+        
+            </view>
+            <view class='info'>
+              <view class='title'>
+                <text class='name'>神仙妹妹</text>
+              </view>
+              <view class='time'>01-02 23：22</view>
+            </view>
+          </view>
+          <view class='desc'>可以用挺好的</view>
+        </view> -->
+    <view class='pinglun'>
+      <!-- <view class='title'>最新评论：</view> -->
+      <block wx:if="{{commentList.length}}" wx:for="{{commentList}}" wx:key="index">
+        <view class='userinfo'>
+          <view class='avator' id="{{item.uid}}" catchtap="toUserDetail">
+            <image class='avator_bg' src='{{item.avatar}}'></image>
+          </view>
+          <view class='info'>
+            <view class='title'>
+              <text class='name'>{{item.nickname}}</text>
+              <text class='tag' wx:if="{{item.carType}}">{{item.carType}}</text>
+              <!-- <text class="flood">{{index + 1}}楼</text> -->
+            </view>
+            <view class='time'>{{item.createTime}}</view>
+          </view>
+        </view>
+        <view class='desc'>{{item.content}}</view>
+        <view class="btn-groups">
+          <view class="group" id="{{item.commentId}}" bindtap="delComment" wx:if="{{item.uid == uid}}">
+                    <image class="del" src="../../../../images/del.png"></image>
+                    <view>删除</view>
+                  </view>
+          <view class="group" style="margin-right: 32rpx;" id="{{item.commentId}}" bindtap="replyCommentShow">
+            <image class="replay_icon" src="../../../../images/replay.png"></image>
+            <view>回复</view>
+          </view>
+
+        </view>
+        <!-- wx:if="{{item.replyEntities.length}}" -->
+        <view class="replay" wx:for="{{item.replyEntities}}" wx:key="index">
+          <view class="replay-name">
+            <view class="name">{{item.nickname}}</view>
+            <view class="time">{{item.createTime}}</view>
+          </view>
+          <view class="replay-content">{{item.content}}</view>
+          <view class="btn-groups">
+            <view class="group"  id="{{item.commentId}}" bindtap="delComment" wx:if="{{item.uid == uid}}">
+              <image class="del" src="../../../../images/del.png"></image>
+              <view>删除</view>
+            </view>
+            <!-- <view class="group" id="{{item.commentId}}" bindtap="replyCommentShow">
+                    <image class="replay_icon" src="../../../../images/replay.png"></image>
+                    <view>回复</view>
+                  </view> -->
+
+          </view>
+        </view>
+      </block>
+      <view wx:if="{{commentList.length == 0}}" class="noreplay">暂无评论...</view>
+
+    </view>
+  </scroll-view>
+  <view class='btn' bindtap="addCommentShow">我要评论</view>
+
+</view>
+
+<view class="mark" hidden="{{isShow}}" bindtap="hideCommentShow">
+  <view class="section" hidden="{{isShow}}">
+    <!-- <form bindsubmit="bindFormSubmit">
+        <textarea placeholder="这个只有在按钮点击的时候才聚焦" auto-height focus="{{focus}}" name="textarea" />
+        <button form-type="submit"> 提交 </button>
+      </form> -->
+    <textarea class="content" value="{{content}}" bindinput="myContent" auto-height focus="{{focus}}" />
+    <view class="btn-area">
+      <button type="primary" catchtap="addComment">添加评论</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,8 @@
+.container{
+  width: 668rpx;
+  margin: 10rpx auto;
+}
+.container text{
+  font-size: 24rpx;
+  color: #2B2B2B;
+}

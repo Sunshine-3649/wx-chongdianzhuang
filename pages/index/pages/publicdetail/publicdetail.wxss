@@ -1,0 +1,304 @@
+.public-list {
+  padding-bottom: 110rpx;
+}
+.public-item {
+  display: flex;
+  width: 750rpx;
+  /* height: 280rpx; */
+  border-bottom: solid 1px #d3d3d3;
+}
+
+.public-left {
+  width: 560rpx;
+  padding: 16rpx 0 16rpx 36rpx;
+}
+
+.public-left .left-one {
+  line-height: 16rpx;
+  display: flex;
+  color: #2b2b2b;
+  font-size: 34rpx;
+}
+
+.public-left .left-one .name {
+  width: 468rpx;
+  line-height: 60rpx;
+  font-weight: 700;
+}
+
+.public-left .left-one .private-name {
+  width: 210rpx;
+  line-height: 60rpx;
+  font-weight: 700;
+}
+
+.public-left .tag {
+  display: inline-block;
+  height: 35rpx;
+  line-height: 35rpx;
+  border: solid 1px #2192d0;
+  color: #2192d0;
+  font-weight: 600;
+  font-size: 20rpx;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0 8rpx;
+  margin: 0;
+  margin-right: 30rpx;
+}
+
+.img_groups {
+  padding-left: 36rpx; 
+}
+.img_groups .img {
+  width: 221rpx;
+  height: 221rpx;
+  margin-right: 13rpx;
+}
+.img_groups_title {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin: 20rpx 0;
+}
+.public-left .left-two,
+.left-three,
+.left-four {
+  display: flex;
+  font-size: 26rpx;
+  line-height: 26rpx;
+  color: #2b2b2b;
+  margin-top: 19rpx;
+}
+
+.public-left .two-left {
+  width: 209rpx;
+}
+
+.public-right {
+  width: 154rpx;
+  position: relative;
+}
+
+.public-right .weizhi {
+  width: 64rpx;
+  height: 64rpx;
+  position: absolute;
+  left: 41rpx;
+  top: 70rpx;
+}
+
+.public-right .juli {
+  position: absolute;
+  left: 40rpx;
+  top: 155rpx;
+  color: #2b2b2b;
+  font-size: 26rpx;
+}
+
+.public-info {
+  padding: 30rpx 0 30rpx 36rpx;
+  font-size: 25rpx;
+  color: #2b2b2b;
+  line-height: 25rpx;
+  border-bottom: solid 1px #d3d3d3;
+}
+
+.tingchefei,
+.fuwufeiyong,
+.chongdianfeiyong,
+.yunyingshijian {
+  margin-top: 19rpx;
+}
+
+.progress {
+  padding: 30rpx 0 30rpx 36rpx;
+  border-bottom: solid 1px #d3d3d3;
+}
+
+.progress .title {
+  color: #2b2b2b;
+  font-size: 26rpx;
+}
+
+.progress .block {
+  height: 64rpx;
+  display: flex;
+  margin-top: 30rpx;
+  position: relative;
+}
+
+.block-item {
+  flex-direction: row;
+  text-align: center;
+}
+
+.progress .block .left {
+  width: 108rpx;
+  font-size: 27rpx;
+  text-align: center;
+}
+
+.left .left-item {
+  display: block;
+}
+
+.progress .block .middle {
+  width: 461rpx;
+  border-radius: 20rpx;
+}
+.progress .text {
+  font-size: 22rpx;
+  color: #2b2b2b;
+  position: absolute;
+  left: 170rpx;
+  top: 16rpx;
+}
+
+.progress .block .right {
+  width: 144rpx;
+  font-size: 27rpx;
+  text-align: center;
+}
+
+.pinglun {
+  padding: 30rpx 0 0 36rpx;
+}
+
+.pinglun .title {
+  font-size: 26rpx;
+  color: #2b2b2b;
+  margin-bottom: 19rpx;
+}
+
+.userinfo {
+  display: flex;
+  border-top: 1px solid #c0c0c0;
+  padding-top: 20rpx;
+}
+
+.avator {
+  width: 72rpx;
+  height: 72rpx;
+  border: solid 1px #2192d0;
+  margin-right: 22rpx;
+}
+.avator_bg {
+  width: 100%;
+  height: 100%;
+}
+.info .title {
+  margin-bottom: 12rpx;
+}
+.info .time {
+  font-size: 24rpx;
+  color: #939393;
+}
+.info .title .name {
+  font-size: 30rpx;
+  color: #2192d0;
+  margin-right: 30rpx;
+}
+
+.info .title .tag {
+  display: inline-block;
+  height: 35rpx;
+  line-height: 35rpx;
+  border: solid 1px #2192d0;
+  color: #2192d0;
+  font-weight: 600;
+  font-size: 20rpx;
+  box-sizing: border-box;
+  border-radius: 3px;
+  text-align: center;
+  padding: 0 8rpx;
+  margin: 0;
+  margin-right: 30rpx;
+}
+.pinglun .desc {
+  margin-top: 30rpx;
+  color: #2e2e2e;
+  font-size: 36rpx;
+  margin-bottom: 15rpx;
+}
+.replay {
+  display: flex;
+  flex-direction: column;
+  padding: 10rpx 30rpx;
+}
+.replay .replay-name {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  border-top: 1px solid #c0c0c0;
+  padding-top: 20rpx;
+}
+.replay .replay-name .name {
+  font-size: 30rpx;
+  color: #2192d0;
+}
+.replay .replay-name .time {
+  font-size: 24rpx;
+  color: #939393;
+}
+.replay .replay-content {
+  font-size: 32rpx;
+  color: #2e2e2e;
+}
+.btn-groups {
+  height: 30rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  margin-bottom: 15rpx;
+}
+.btn-groups .group {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  margin-left: 15rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #999;
+  margin-right: 10rpx;
+}
+.btn-groups .group .del {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 15rpx;
+}
+.btn-groups .group .replay_icon {
+  width: 36rpx;
+  height: 36rpx;
+  margin-right: 15rpx;
+}
+.btn {
+  width: 750rpx;
+  height: 110rpx;
+  color: #ffffff;
+  text-align: center;
+  background-color: #2192d0;
+  line-height: 110rpx;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.mark {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(150, 150, 150, 0.5);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  width: 500rpx;
+  min-height: 225rpx;
+  background-color: #fff;
+  padding: 40rpx;
+  margin-top: -280rpx;
+}
